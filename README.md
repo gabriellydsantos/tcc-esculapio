@@ -41,7 +41,7 @@ Adicionar no GitHub:
 
 4. **Fazer Push das Alterações para o GitHub:**
    ```
-   git push origin master
+   git push origin 
    ```
 
 Isso pressionará suas alterações para o ramo principal (`master`) do repositório no GitHub.
