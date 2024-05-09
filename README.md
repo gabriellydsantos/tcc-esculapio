@@ -17,6 +17,8 @@ O **Esculápio** é um sistema de gerenciamento de clínica online desenvolvido 
 - `database/`: Arquivos relacionados ao banco de dados, como o esquema SQL e os arquivos de sementes.
 - `includes/`: Arquivos PHP comuns incluídos em várias partes do sistema, como cabeçalhos e rodapés.
 - `assets/`: Recursos estáticos como CSS, JavaScript e imagens.
+  
+<p style="color:red;">________________________________________________________________________________________________________________________________________________________</p>
 
 Adicionar no GitHub:
 
@@ -43,46 +45,5 @@ Adicionar no GitHub:
    ```
    git push
    ```
-<p style="color:red;">_________________________________________________________________________________________________________________________________________________________________</p>
-      Existem várias formas de usar o comando `git push` no Git, Aqui estão alguns exemplos:
-      
-      1. **Push Simples:**
-         ```bash
-         git push
-         ```
-         Este comando simplesmente envia todas as suas alterações locais para o repositório remoto padrão.
-      
-      2. **Push para um Ramo Específico:**
-         ```bash
-         git push origin nome-do-ramo
-         ```
-         Isso envia as alterações do ramo específico para o repositório remoto.
-      
-      3. **Push de Todos os Ramos:**
-         ```bash
-         git push --all origin
-         ```
-         Isso envia todos os ramos locais para o repositório remoto.
-      
-      4. **Forçar o Push:**
-         ```bash
-         git push --force origin nome-do-ramo
-         ```
-         Às vezes, você pode precisar forçar o push se suas alterações locais forem diferentes das do repositório remoto. Tenha cuidado ao usar esse comando, pois ele pode substituir as alterações existentes no            repositório remoto.
-      
-      5. **Push com Tags:**
-         ```bash
-         git push --tags origin
-         ```
-         Isso envia todas as tags locais para o repositório remoto.
-      
-      6. **Push de um Ramo e Definir Como Padrão:**
-         ```bash
-         git push -u origin nome-do-ramo
-         ```
-         Isso não apenas envia o ramo para o repositório remoto, mas também define-o como o ramo padrão para push no futuro.
 
-Lembre-se de substituir `origin` pelo nome do seu repositório remoto, se for diferente. Além disso, ajuste `nome-do-ramo` para corresponder ao nome do ramo que você deseja enviar ou receber.
-Isso pressionará suas alterações para o ramo principal (`master`) do repositório no GitHub.
 
-Certifique-se de executar esses comandos dentro do diretório do seu projeto local após ter feito as alterações necessárias.
