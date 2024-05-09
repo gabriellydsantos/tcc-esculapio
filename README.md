@@ -43,6 +43,7 @@ Adicionar no GitHub:
    ```
    git push
    ```
+<p style="color:red;">_________________________________________________________________________________________________________________________________________________________________</p>
       Existem várias formas de usar o comando `git push` no Git, Aqui estão alguns exemplos:
       
       1. **Push Simples:**
