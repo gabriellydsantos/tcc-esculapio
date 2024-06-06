@@ -17,6 +17,7 @@ O **Esculápio** é um sistema de gerenciamento de clínica online desenvolvido 
 - `database/`: Arquivos relacionados ao banco de dados, como o esquema SQL e os arquivos de sementes.
 - `includes/`: Arquivos PHP comuns incluídos em várias partes do sistema, como cabeçalhos e rodapés.
 - `assets/`: Recursos estáticos como CSS, JavaScript e imagens.
+- `favicon_io/`: Recursos estáticos como icons 
   
 <p style="color:red;">____________________________________________________________________________________________________</p>
 
