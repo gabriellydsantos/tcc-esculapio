@@ -2079,7 +2079,7 @@ ul.chat-user-total li i.old-users {
 .good-morning-blk:before {
     content: "";
     position: absolute;
-    background-image: url(../img/bg-img-01.png);
+    /* background-image: url(../img/bg-img-01.png); */
     background-repeat: no-repeat;
     background-position: top right;
     width: 100%;
@@ -2345,7 +2345,7 @@ table.dataTable thead .sorting_desc_disabled:after {
 }
 
 .income-value p span {
-    color: #00d3c7
+    color: #001cd3
 }
 
 .patient-structure h5 {

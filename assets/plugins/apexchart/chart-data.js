@@ -507,16 +507,16 @@ if ($('#patient-chart').length > 0) {
 			enabled: false
 		},
 		series: [{
-			name: 'Male',
+			name: 'Masculino',
 			color: '#2E37A4',
 			data: [20, 30, 41, 67, 22, 43, 40,10,30,20,40]
 		},{
-			name: 'Female',
+			name: 'Feminino',
 			color: '#00D3C7',
 			data: [13, 23, 20, 8, 13, 27, 30,25,10,15,20]
 		}],
 		xaxis: {
-			categories: ['Jan','Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+			categories: ['Jan','Fev', 'Mar', 'Apr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez'],
 		},
 		
 	}
