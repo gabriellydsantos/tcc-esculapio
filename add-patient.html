@@ -1,7 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-  <!-- Mirrored from preclinic.dreamstechnologies.com/html/template/add-patient.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 04 Jun 2024 21:43:14 GMT -->
-
+<html lang="pt-br">
   <head>
     <meta charset="utf-8" />
     <meta
@@ -9,11 +7,25 @@
       content="width=device-width, initial-scale=1.0, user-scalable=0"
     />
     <link
-      rel="shortcut icon"
-      type="image/x-icon"
-      href="assets/img/favicon.png"
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon_io/apple-touch-icon.png"
     />
-    <title>Preclinic - Medical & Hospital - Bootstrap 5 Admin Template</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon_io/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <title>Higia</title>
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
@@ -33,12 +45,15 @@
 
     <link rel="stylesheet" type="text/css" href="assets/css/select2.min.css" />
 
-    <link rel="stylesheet" href="assets/css/bootstrap-datetimepicker.min.css" />
+    <link
+      rel="stylesheet"
+      href="assets/plugins/datatables/datatables.min.css"
+    />
 
     <link rel="stylesheet" href="assets/css/feather.css" />
+
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
   </head>
-
   <body>
     <div class="main-wrapper">
       <div class="header">
@@ -68,7 +83,7 @@
         <ul class="nav user-menu float-end">
           <li class="nav-item dropdown d-none d-md-block">
             <!-- <a href="#" class="dropdown-toggle nav-link" data-bs-toggle="dropdown"><img
-                    src="assets/img/icons/note-icon-02.svg" alt><span class="pulse"></span> </a> -->
+                          src="assets/img/icons/note-icon-02.svg" alt><span class="pulse"></span> </a> -->
             <div class="dropdown-menu notifications">
               <div class="topnav-dropdown-header">
                 <span>Notificações</span>
@@ -174,9 +189,9 @@
             </div>
           </li>
           <!-- <li class="nav-item dropdown d-none d-md-block">
-            <a href="javascript:void(0);" id="open_msg_box" class="hasnotifications nav-link"><img
-                    src="assets/img/icons/note-icon-01.svg" alt><span class="pulse"></span> </a>
-        </li> -->
+                  <a href="javascript:void(0);" id="open_msg_box" class="hasnotifications nav-link"><img
+                          src="assets/img/icons/note-icon-01.svg" alt><span class="pulse"></span> </a>
+              </li> -->
           <li class="nav-item dropdown has-arrow user-profile-list">
             <a
               href="#"
@@ -201,9 +216,9 @@
             </div>
           </li>
           <!-- <li class="nav-item ">
-            <a href="settings.html" class="hasnotifications nav-link"><img
-                    src="assets/img/icons/setting-icon-01.svg" alt> </a>
-        </li> -->
+                  <a href="settings.html" class="hasnotifications nav-link"><img
+                          src="assets/img/icons/setting-icon-01.svg" alt> </a>
+              </li> -->
         </ul>
         <div class="dropdown mobile-user-menu float-end">
           <a
@@ -221,6 +236,7 @@
           </div>
         </div>
       </div>
+
       <div class="sidebar" id="sidebar">
         <div class="sidebar-inner slimscroll">
           <div id="sidebar-menu" class="sidebar-menu">
@@ -231,8 +247,7 @@
                   ><span class="menu-side"
                     ><img src="assets/img/icons/menu-icon-01.svg" alt=""
                   /></span>
-                  <span> Painel de Controle </span>
-                  <span class="menu-arrow"></span
+                  <span> Controle </span> <span class="menu-arrow"></span
                 ></a>
                 <ul style="display: none">
                   <li><a href="index.html">Painel do Admin</a></li>
@@ -247,7 +262,7 @@
                   ><span class="menu-side"
                     ><img src="assets/img/icons/menu-icon-02.svg" alt=""
                   /></span>
-                  <span> Médicos </span> <span class="menu-arrow"></span
+                  <span> Médicos </span> <span class="menu-arrow"></span]
                 ></a>
                 <ul style="display: none">
                   <li><a href="doctors.html">Lista de Médicos</a></li>
@@ -335,12 +350,12 @@
               <div class="col-sm-12">
                 <ul class="breadcrumb">
                   <li class="breadcrumb-item">
-                    <a href="patients.html">Patients </a>
+                    <a href="doctors.html">Pacientes </a>
                   </li>
                   <li class="breadcrumb-item">
                     <i class="feather-chevron-right"></i>
                   </li>
-                  <li class="breadcrumb-item active">Add Patient</li>
+                  <li class="breadcrumb-item active">Adicione um paciente</li>
                 </ul>
               </div>
             </div>
@@ -354,13 +369,13 @@
                     <div class="row">
                       <div class="col-12">
                         <div class="form-heading">
-                          <h4>Patinets Details</h4>
+                          <h4>Detalhes do paciente</h4>
                         </div>
                       </div>
                       <div class="col-12 col-md-6 col-xl-4">
                         <div class="input-block local-forms">
                           <label
-                            >First Name
+                            >Primeiro nome
                             <span class="login-danger">*</span></label
                           >
                           <input class="form-control" type="text" placeholder />
@@ -369,8 +384,7 @@
                       <div class="col-12 col-md-6 col-xl-4">
                         <div class="input-block local-forms">
                           <label
-                            >Last Name
-                            <span class="login-danger">*</span></label
+                            >Sobrenome<span class="login-danger">*</span></label
                           >
                           <input class="form-control" type="text" placeholder />
                         </div>
@@ -378,7 +392,7 @@
                       <div class="col-12 col-md-6 col-xl-4">
                         <div class="input-block local-forms">
                           <label
-                            >User Name
+                            >Nome de usuário
                             <span class="login-danger">*</span></label
                           >
                           <input class="form-control" type="text" placeholder />
@@ -387,7 +401,7 @@
                       <div class="col-12 col-md-6 col-xl-6">
                         <div class="input-block local-forms">
                           <label
-                            >Mobile <span class="login-danger">*</span></label
+                            >Telefone <span class="login-danger">*</span></label
                           >
                           <input class="form-control" type="text" placeholder />
                         </div>
@@ -395,7 +409,7 @@
                       <div class="col-12 col-md-6 col-xl-6">
                         <div class="input-block local-forms">
                           <label
-                            >Email <span class="login-danger">*</span></label
+                            >E-mail<span class="login-danger">*</span></label
                           >
                           <input
                             class="form-control"
@@ -407,7 +421,7 @@
                       <div class="col-12 col-md-6 col-xl-6">
                         <div class="input-block local-forms">
                           <label
-                            >Password <span class="login-danger">*</span></label
+                            >Senha <span class="login-danger">*</span></label
                           >
                           <input
                             class="form-control"
@@ -419,7 +433,7 @@
                       <div class="col-12 col-md-6 col-xl-6">
                         <div class="input-block local-forms">
                           <label
-                            >Confirm Password
+                            >Confirme sua senha
                             <span class="login-danger">*</span></label
                           >
                           <input
@@ -431,8 +445,8 @@
                       </div>
                       <div class="col-12 col-md-6 col-xl-6">
                         <div class="input-block local-forms cal-icon">
-                          <label
-                            >Date Of Birth
+                          <label>
+                            Data de nascimento
                             <span class="login-danger">*</span></label
                           >
                           <input
@@ -445,15 +459,15 @@
                       <div class="col-12 col-md-6 col-xl-6">
                         <div class="input-block select-gender">
                           <label class="gen-label"
-                            >Gender<span class="login-danger">*</span></label
+                            >Gênero<span class="login-danger">*</span></label
                           >
                           <div class="form-check-inline">
                             <label class="form-check-label">
                               <input
                                 type="radio"
                                 name="gender"
-                                class="form-check-input"
-                              />Male
+                                class="form-check-input mt-0"
+                              />Masculino
                             </label>
                           </div>
                           <div class="form-check-inline">
@@ -461,8 +475,8 @@
                               <input
                                 type="radio"
                                 name="gender"
-                                class="form-check-input"
-                              />Female
+                                class="form-check-input mt-0"
+                              />Feminino
                             </label>
                           </div>
                         </div>
@@ -470,8 +484,7 @@
                       <div class="col-12 col-md-6 col-xl-4">
                         <div class="input-block local-forms">
                           <label
-                            >Education
-                            <span class="login-danger">*</span></label
+                            >Educação <span class="login-danger">*</span></label
                           >
                           <input class="form-control" type="text" placeholder />
                         </div>
@@ -479,8 +492,9 @@
                       <div class="col-12 col-md-6 col-xl-4">
                         <div class="input-block local-forms">
                           <label
-                            >Designation
-                            <span class="login-danger">*</span></label
+                            >designação<span class="login-danger"
+                              >*</span
+                            ></label
                           >
                           <input class="form-control" type="text" placeholder />
                         </div>
@@ -488,21 +502,21 @@
                       <div class="col-12 col-md-6 col-xl-4">
                         <div class="input-block local-forms">
                           <label
-                            >Department
+                            >Departamento
                             <span class="login-danger">*</span></label
                           >
                           <select class="form-control select">
-                            <option>Select Department</option>
-                            <option>Orthopedics</option>
-                            <option>Radiology</option>
-                            <option>Dentist</option>
+                            <option>Selecione Departamento</option>
+                            <option>Ortopedia</option>
+                            <option>Radiologia</option>
+                            <option>Dentista</option>
                           </select>
                         </div>
                       </div>
                       <div class="col-12 col-sm-12">
                         <div class="input-block local-forms">
                           <label
-                            >Address <span class="login-danger">*</span></label
+                            >Endereço <span class="login-danger">*</span></label
                           >
                           <textarea
                             class="form-control"
@@ -514,63 +528,82 @@
                       <div class="col-12 col-md-6 col-xl-3">
                         <div class="input-block local-forms">
                           <label
-                            >City <span class="login-danger">*</span></label
+                            >Cidade<span class="login-danger">*</span></label
                           >
                           <select class="form-control select">
-                            <option>Select City</option>
-                            <option>Alaska</option>
-                            <option>Los Angeles</option>
+                            <option>Selecione a cidade</option>
+                            <option>São Paulo</option>
+                            <option>Rio de Janeiro</option>
+                            <option>Santos</option>
+                            <option>Campinas</option>
+                            <option>Guarulhos</option>
+                            <option>São Bernardo do Campo</option>
+                            <option>Osasco</option>
+                            <option>Barueri</option>
+                            <option>Santo André</option>
+                            <option>Niterói</option>
+                            <option>Duque de Caxias</option>
+                            <option>Nova Iguaçu</option>
+                            <option>São Gonçalo</option>
+                            <option>Petrópolis</option>
                           </select>
                         </div>
                       </div>
                       <div class="col-12 col-md-6 col-xl-3">
                         <div class="input-block local-forms">
                           <label
-                            >Country <span class="login-danger">*</span></label
+                            >País <span class="login-danger">*</span></label
                           >
                           <select class="form-control select">
-                            <option>Select Country</option>
-                            <option>Usa</option>
-                            <option>Uk</option>
-                            <option>Italy</option>
+                            <option>Selecione o estado</option>
+                            <option>Brasil</option>
                           </select>
                         </div>
                       </div>
                       <div class="col-12 col-md-6 col-xl-3">
                         <div class="input-block local-forms">
                           <label
-                            >State/Province
-                            <span class="login-danger">*</span></label
+                            >Estado <span class="login-danger">*</span></label
                           >
                           <select class="form-control select">
-                            <option>Select State</option>
-                            <option>Alaska</option>
-                            <option>California</option>
+                            <option>Selecione o estado</option>
+                            <option>Acre</option>
+                            <option>Alagoas</option>
+                            <option>Amapá</option>
+                            <option>Amazonas</option>
+                            <option>Bahia</option>
+                            <option>Ceará</option>
+                            <option>Distrito Federal</option>
+                            <option>Espírito Santo</option>
+                            <option>Goiás</option>
+                            <option>Maranhão</option>
+                            <option>Mato Grosso</option>
+                            <option>Mato Grosso do Sul</option>
+                            <option>Minas Gerais</option>
+                            <option>Pará</option>
+                            <option>Paraíba</option>
+                            <option>Paraná</option>
+                            <option>Pernambuco</option>
+                            <option>Piauí</option>
+                            <option>Rio de Janeiro</option>
+                            <option>Rio Grande do Norte</option>
+                            <option>Rio Grande do Sul</option>
+                            <option>Rondônia</option>
+                            <option>Roraima</option>
+                            <option>Santa Catarina</option>
+                            <option>São Paulo</option>
+                            <option>Sergipe</option>
+                            <option>Tocantins</option>
                           </select>
                         </div>
                       </div>
                       <div class="col-12 col-md-6 col-xl-3">
                         <div class="input-block local-forms">
-                          <label
-                            >Postal Code
-                            <span class="login-danger">*</span></label
-                          >
+                          <label>Cep<span class="login-danger">*</span></label>
                           <input class="form-control" type="text" placeholder />
                         </div>
                       </div>
-                      <div class="col-12 col-sm-12">
-                        <div class="input-block local-forms">
-                          <label
-                            >Start Biography
-                            <span class="login-danger">*</span></label
-                          >
-                          <textarea
-                            class="form-control"
-                            rows="3"
-                            cols="30"
-                          ></textarea>
-                        </div>
-                      </div>
+
                       <div class="col-12 col-md-6 col-xl-6">
                         <div class="input-block local-top-form">
                           <label class="local-top"
@@ -584,9 +617,11 @@
                               id="file"
                               onchange="if (!window.__cfRLUnblockHandlers) return false; loadFile(event)"
                               class="hide-input"
-                              data-cf-modified-f2418516bf81330a4c9cbdfc-
+                              data-cf-modified-47d543a399884d7bc4ffb078-
                             />
-                            <label for="file" class="upload">Choose File</label>
+                            <label for="file" class="upload"
+                              >Escolher arquivo</label
+                            >
                           </div>
                         </div>
                       </div>
@@ -600,8 +635,8 @@
                               <input
                                 type="radio"
                                 name="gender"
-                                class="form-check-input"
-                              />Active
+                                class="form-check-input mt-0"
+                              />Ativa
                             </label>
                           </div>
                           <div class="form-check-inline">
@@ -609,8 +644,8 @@
                               <input
                                 type="radio"
                                 name="gender"
-                                class="form-check-input"
-                              />In Active
+                                class="form-check-input mt-0"
+                              />Inativo
                             </label>
                           </div>
                         </div>
@@ -621,13 +656,13 @@
                             type="submit"
                             class="btn btn-primary submit-form me-2"
                           >
-                            Submit
+                            Enviar
                           </button>
                           <button
                             type="submit"
                             class="btn btn-primary cancel-form"
                           >
-                            Cancel
+                            Cancelar
                           </button>
                         </div>
                       </div>
@@ -641,7 +676,7 @@
         <div class="notification-box">
           <div class="msg-sidebar notifications msg-noti">
             <div class="topnav-dropdown-header">
-              <span>Messages</span>
+              <span>Mensagens</span>
             </div>
             <div class="drop-scroll msg-list-scroll" id="msg_list">
               <ul class="list-box">
@@ -652,8 +687,8 @@
                         <span class="avatar">R</span>
                       </div>
                       <div class="list-body">
-                        <span class="message-author">Richard Miles </span>
-                        <span class="message-time">12:28 AM</span>
+                        <span class="message-author">Lorem Ipsum </span>
+                        <span class="message-time">12:28</span>
                         <div class="clearfix"></div>
                         <span class="message-content"
                           >Lorem ipsum dolor sit amet, consectetur
@@ -670,8 +705,8 @@
                         <span class="avatar">J</span>
                       </div>
                       <div class="list-body">
-                        <span class="message-author">John Doe</span>
-                        <span class="message-time">1 Aug</span>
+                        <span class="message-author">Lorem Ipsum</span>
+                        <span class="message-time">1 de agosto</span>
                         <div class="clearfix"></div>
                         <span class="message-content"
                           >Lorem ipsum dolor sit amet, consectetur
@@ -688,8 +723,8 @@
                         <span class="avatar">T</span>
                       </div>
                       <div class="list-body">
-                        <span class="message-author"> Tarah Shropshire </span>
-                        <span class="message-time">12:28 AM</span>
+                        <span class="message-author"> Lorem Ipsum </span>
+                        <span class="message-time">12:28</span>
                         <div class="clearfix"></div>
                         <span class="message-content"
                           >Lorem ipsum dolor sit amet, consectetur
@@ -706,8 +741,8 @@
                         <span class="avatar">M</span>
                       </div>
                       <div class="list-body">
-                        <span class="message-author">Mike Litorus</span>
-                        <span class="message-time">12:28 AM</span>
+                        <span class="message-author">Lorem Ipsum</span>
+                        <span class="message-time">12:28</span>
                         <div class="clearfix"></div>
                         <span class="message-content"
                           >Lorem ipsum dolor sit amet, consectetur
@@ -724,8 +759,8 @@
                         <span class="avatar">C</span>
                       </div>
                       <div class="list-body">
-                        <span class="message-author"> Catherine Manseau </span>
-                        <span class="message-time">12:28 AM</span>
+                        <span class="message-author"> Lorem Ipsum </span>
+                        <span class="message-time">12:28</span>
                         <div class="clearfix"></div>
                         <span class="message-content"
                           >Lorem ipsum dolor sit amet, consectetur
@@ -742,8 +777,8 @@
                         <span class="avatar">D</span>
                       </div>
                       <div class="list-body">
-                        <span class="message-author"> Domenic Houston </span>
-                        <span class="message-time">12:28 AM</span>
+                        <span class="message-author"> Lorem Ipsum </span>
+                        <span class="message-time">12:28</span>
                         <div class="clearfix"></div>
                         <span class="message-content"
                           >Lorem ipsum dolor sit amet, consectetur
@@ -760,8 +795,8 @@
                         <span class="avatar">B</span>
                       </div>
                       <div class="list-body">
-                        <span class="message-author"> Buster Wigton </span>
-                        <span class="message-time">12:28 AM</span>
+                        <span class="message-author"> Lorem Ipsum </span>
+                        <span class="message-time">12:28</span>
                         <div class="clearfix"></div>
                         <span class="message-content"
                           >Lorem ipsum dolor sit amet, consectetur
@@ -778,8 +813,8 @@
                         <span class="avatar">R</span>
                       </div>
                       <div class="list-body">
-                        <span class="message-author"> Rolland Webber </span>
-                        <span class="message-time">12:28 AM</span>
+                        <span class="message-author"> Lorem Ipsum </span>
+                        <span class="message-time">12:28</span>
                         <div class="clearfix"></div>
                         <span class="message-content"
                           >Lorem ipsum dolor sit amet, consectetur
@@ -796,8 +831,8 @@
                         <span class="avatar">C</span>
                       </div>
                       <div class="list-body">
-                        <span class="message-author"> Claire Mapes </span>
-                        <span class="message-time">12:28 AM</span>
+                        <span class="message-author"> Lorem Ipsum </span>
+                        <span class="message-time">12:28</span>
                         <div class="clearfix"></div>
                         <span class="message-content"
                           >Lorem ipsum dolor sit amet, consectetur
@@ -814,7 +849,7 @@
                         <span class="avatar">M</span>
                       </div>
                       <div class="list-body">
-                        <span class="message-author">Melita Faucher</span>
+                        <span class="message-author">Lorem Ipsum </span>
                         <span class="message-time">12:28 AM</span>
                         <div class="clearfix"></div>
                         <span class="message-content"
@@ -832,8 +867,8 @@
                         <span class="avatar">J</span>
                       </div>
                       <div class="list-body">
-                        <span class="message-author">Jeffery Lalor</span>
-                        <span class="message-time">12:28 AM</span>
+                        <span class="message-author">Lorem Ipsum </span>
+                        <span class="message-time">12:28</span>
                         <div class="clearfix"></div>
                         <span class="message-content"
                           >Lorem ipsum dolor sit amet, consectetur
@@ -850,8 +885,8 @@
                         <span class="avatar">L</span>
                       </div>
                       <div class="list-body">
-                        <span class="message-author">Loren Gatlin</span>
-                        <span class="message-time">12:28 AM</span>
+                        <span class="message-author">lorenGatlin</span>
+                        <span class="message-time">12:28</span>
                         <div class="clearfix"></div>
                         <span class="message-content"
                           >Lorem ipsum dolor sit amet, consectetur
@@ -868,8 +903,10 @@
                         <span class="avatar">T</span>
                       </div>
                       <div class="list-body">
-                        <span class="message-author">Tarah Shropshire</span>
-                        <span class="message-time">12:28 AM</span>
+                        <span class="message-author"
+                          >Tara: no show do trabalho</span
+                        >
+                        <span class="message-time">12:28</span>
                         <div class="clearfix"></div>
                         <span class="message-content"
                           >Lorem ipsum dolor sit amet, consectetur
@@ -892,12 +929,12 @@
           <div class="modal-content">
             <div class="modal-body text-center">
               <img src="assets/img/sent.png" alt width="50" height="46" />
-              <h3>Are you sure want to delete this ?</h3>
+              <h3>Você tem certeza que deseja deletar isso ?</h3>
               <div class="m-t-20">
                 <a href="#" class="btn btn-white" data-bs-dismiss="modal"
-                  >Close</a
+                  >Fechar</a
                 >
-                <button type="submit" class="btn btn-danger">Delete</button>
+                <button type="submit" class="btn btn-danger">Excluir</button>
               </div>
             </div>
           </div>
@@ -905,45 +942,49 @@
       </div>
     </div>
     <div class="sidebar-overlay" data-reff></div>
+
     <script
       src="assets/js/jquery-3.7.1.min.js"
-      type="f2418516bf81330a4c9cbdfc-text/javascript"
+      type="47d543a399884d7bc4ffb078-text/javascript"
     ></script>
+
     <script
       src="assets/js/bootstrap.bundle.min.js"
-      type="f2418516bf81330a4c9cbdfc-text/javascript"
+      type="47d543a399884d7bc4ffb078-text/javascript"
     ></script>
+
     <script
       src="assets/js/feather.min.js"
-      type="f2418516bf81330a4c9cbdfc-text/javascript"
+      type="47d543a399884d7bc4ffb078-text/javascript"
     ></script>
+
     <script
       src="assets/js/jquery.slimscroll.js"
-      type="f2418516bf81330a4c9cbdfc-text/javascript"
+      type="47d543a399884d7bc4ffb078-text/javascript"
     ></script>
+
     <script
       src="assets/js/select2.min.js"
-      type="f2418516bf81330a4c9cbdfc-text/javascript"
+      type="47d543a399884d7bc4ffb078-text/javascript"
     ></script>
 
     <script
       src="assets/plugins/moment/moment.min.js"
-      type="f2418516bf81330a4c9cbdfc-text/javascript"
+      type="47d543a399884d7bc4ffb078-text/javascript"
     ></script>
     <script
       src="assets/js/bootstrap-datetimepicker.min.js"
-      type="f2418516bf81330a4c9cbdfc-text/javascript"
+      type="47d543a399884d7bc4ffb078-text/javascript"
     ></script>
+
     <script
       src="assets/js/app.js"
-      type="f2418516bf81330a4c9cbdfc-text/javascript"
+      type="47d543a399884d7bc4ffb078-text/javascript"
     ></script>
     <script
       src="../../cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js"
-      data-cf-settings="f2418516bf81330a4c9cbdfc-|49"
+      data-cf-settings="47d543a399884d7bc4ffb078-|49"
       defer
     ></script>
   </body>
-
-  <!-- Mirrored from preclinic.dreamstechnologies.com/html/template/add-patient.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 04 Jun 2024 21:43:14 GMT -->
 </html>

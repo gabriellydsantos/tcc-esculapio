@@ -1,7 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-  <!-- Mirrored from preclinic.dreamstechnologies.com/html/template/edit-patient.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 04 Jun 2024 21:43:14 GMT -->
-
+<html lang="pt-br">
   <head>
     <meta charset="utf-8" />
     <meta
@@ -9,39 +7,59 @@
       content="width=device-width, initial-scale=1.0, user-scalable=0"
     />
     <link
-      rel="shortcut icon"
-      type="image/x-icon"
-      href="assets/img/favicon.png"
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon_io/apple-touch-icon.png"
     />
-    <title>Preclinic - Medical & Hospital - Bootstrap 5 Admin Template</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon_io/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <title>Higia</title>
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
+
     <link
       rel="stylesheet"
       type="text/css"
       href="assets/css/bootstrap.min.css"
     />
+
     <link
       rel="stylesheet"
       href="assets/plugins/fontawesome/css/fontawesome.min.css"
     />
     <link rel="stylesheet" href="assets/plugins/fontawesome/css/all.min.css" />
+
     <link rel="stylesheet" type="text/css" href="assets/css/select2.min.css" />
 
-    <link rel="stylesheet" href="assets/css/bootstrap-datetimepicker.min.css" />
+    <link
+      rel="stylesheet"
+      href="assets/plugins/datatables/datatables.min.css"
+    />
 
     <link rel="stylesheet" href="assets/css/feather.css" />
+
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
   </head>
-
   <body>
     <div class="main-wrapper">
       <div class="header">
         <div class="header-left">
           <a href="index.html" class="logo">
-            <!-- <img src="assets/img/logo.png" width="35" height="35" alt> <span>Pre Clinic</span> -->
+            <img src="assets/img/logo 1.png" width="100" height="40" alt />
           </a>
         </div>
         <a id="toggle_btn" href="javascript:void(0);"
@@ -65,7 +83,7 @@
         <ul class="nav user-menu float-end">
           <li class="nav-item dropdown d-none d-md-block">
             <!-- <a href="#" class="dropdown-toggle nav-link" data-bs-toggle="dropdown"><img
-                    src="assets/img/icons/note-icon-02.svg" alt><span class="pulse"></span> </a> -->
+                          src="assets/img/icons/note-icon-02.svg" alt><span class="pulse"></span> </a> -->
             <div class="dropdown-menu notifications">
               <div class="topnav-dropdown-header">
                 <span>Notificações</span>
@@ -171,9 +189,9 @@
             </div>
           </li>
           <!-- <li class="nav-item dropdown d-none d-md-block">
-            <a href="javascript:void(0);" id="open_msg_box" class="hasnotifications nav-link"><img
-                    src="assets/img/icons/note-icon-01.svg" alt><span class="pulse"></span> </a>
-        </li> -->
+                  <a href="javascript:void(0);" id="open_msg_box" class="hasnotifications nav-link"><img
+                          src="assets/img/icons/note-icon-01.svg" alt><span class="pulse"></span> </a>
+              </li> -->
           <li class="nav-item dropdown has-arrow user-profile-list">
             <a
               href="#"
@@ -198,9 +216,9 @@
             </div>
           </li>
           <!-- <li class="nav-item ">
-            <a href="settings.html" class="hasnotifications nav-link"><img
-                    src="assets/img/icons/setting-icon-01.svg" alt> </a>
-        </li> -->
+                  <a href="settings.html" class="hasnotifications nav-link"><img
+                          src="assets/img/icons/setting-icon-01.svg" alt> </a>
+              </li> -->
         </ul>
         <div class="dropdown mobile-user-menu float-end">
           <a
@@ -218,6 +236,7 @@
           </div>
         </div>
       </div>
+
       <div class="sidebar" id="sidebar">
         <div class="sidebar-inner slimscroll">
           <div id="sidebar-menu" class="sidebar-menu">
@@ -228,8 +247,7 @@
                   ><span class="menu-side"
                     ><img src="assets/img/icons/menu-icon-01.svg" alt=""
                   /></span>
-                  <span> Painel de Controle </span>
-                  <span class="menu-arrow"></span
+                  <span> Controle </span> <span class="menu-arrow"></span
                 ></a>
                 <ul style="display: none">
                   <li><a href="index.html">Painel do Admin</a></li>
@@ -324,6 +342,7 @@
           </div>
         </div>
       </div>
+
       <div class="page-wrapper">
         <div class="content">
           <div class="page-header">
@@ -331,12 +350,12 @@
               <div class="col-sm-12">
                 <ul class="breadcrumb">
                   <li class="breadcrumb-item">
-                    <a href="patients.html">Patients </a>
+                    <a href="doctors.html">Pacientes </a>
                   </li>
                   <li class="breadcrumb-item">
                     <i class="feather-chevron-right"></i>
                   </li>
-                  <li class="breadcrumb-item active">Edit Patient</li>
+                  <li class="breadcrumb-item active">Editar pacientes</li>
                 </ul>
               </div>
             </div>
@@ -350,64 +369,64 @@
                     <div class="row">
                       <div class="col-12">
                         <div class="form-heading">
-                          <h4>Patinets Details</h4>
+                          <h4>Detalhes do médico</h4>
                         </div>
                       </div>
                       <div class="col-12 col-md-6 col-xl-4">
                         <div class="input-block local-forms">
                           <label
-                            >First Name
+                            >Primeiro nome
                             <span class="login-danger">*</span></label
                           >
                           <input
                             class="form-control"
                             type="text"
-                            value="Daniel"
+                            value="Lorem ipsum"
                           />
                         </div>
                       </div>
                       <div class="col-12 col-md-6 col-xl-4">
                         <div class="input-block local-forms">
                           <label
-                            >Last Name
+                            >Sobrenome
                             <span class="login-danger">*</span></label
                           >
                           <input
                             class="form-control"
                             type="text"
-                            value="Bruk"
+                            value="Lorem ipsum"
                           />
                         </div>
                       </div>
                       <div class="col-12 col-md-6 col-xl-4">
                         <div class="input-block local-forms">
                           <label
-                            >User Name
+                            >Nome de usuário
                             <span class="login-danger">*</span></label
                           >
                           <input
                             class="form-control"
                             type="text"
-                            value="Daniel Bruk"
+                            value="Lorem ipsum"
                           />
                         </div>
                       </div>
                       <div class="col-12 col-md-6 col-xl-6">
                         <div class="input-block local-forms">
                           <label
-                            >Mobile <span class="login-danger">*</span></label
+                            >Móvel <span class="login-danger">*</span></label
                           >
                           <input
                             class="form-control"
                             type="text"
-                            value="+1 23 456890"
+                            value="+55 11 987456321"
                           />
                         </div>
                       </div>
                       <div class="col-12 col-md-6 col-xl-6">
                         <div class="input-block local-forms">
                           <label
-                            >Email <span class="login-danger">*</span></label
+                            >E-mail <span class="login-danger">*</span></label
                           >
                           <input
                             class="form-control"
@@ -419,45 +438,45 @@
                       <div class="col-12 col-md-6 col-xl-6">
                         <div class="input-block local-forms">
                           <label
-                            >Password <span class="login-danger">*</span></label
+                            >Senha <span class="login-danger">*</span></label
                           >
                           <input
                             class="form-control"
                             type="password"
-                            value="password"
+                            value="senha"
                           />
                         </div>
                       </div>
                       <div class="col-12 col-md-6 col-xl-6">
                         <div class="input-block local-forms">
                           <label
-                            >Confirm Password
+                            >Confirme sua senha
                             <span class="login-danger">*</span></label
                           >
                           <input
                             class="form-control"
                             type="password"
-                            value="password"
+                            value="senha"
                           />
                         </div>
                       </div>
                       <div class="col-12 col-md-6 col-xl-6">
                         <div class="input-block local-forms cal-icon">
                           <label
-                            >Date Of Birth
+                            >Data de nascimento
                             <span class="login-danger">*</span></label
                           >
                           <input
                             class="form-control datetimepicker"
                             type="text"
-                            value="24-11-2022"
+                            value="24112022"
                           />
                         </div>
                       </div>
                       <div class="col-12 col-md-6 col-xl-6">
                         <div class="input-block select-gender">
                           <label class="gen-label"
-                            >Gender<span class="login-danger">*</span></label
+                            >Gênero<span class="login-danger">*</span></label
                           >
                           <div class="form-check-inline">
                             <label class="form-check-label">
@@ -466,7 +485,7 @@
                                 name="gender"
                                 class="form-check-input"
                                 checked
-                              />Male
+                              />Masculino
                             </label>
                           </div>
                           <div class="form-check-inline">
@@ -475,7 +494,7 @@
                                 type="radio"
                                 name="gender"
                                 class="form-check-input"
-                              />Female
+                              />Feminino
                             </label>
                           </div>
                         </div>
@@ -483,88 +502,121 @@
                       <div class="col-12 col-md-6 col-xl-4">
                         <div class="input-block local-forms">
                           <label
-                            >Education
-                            <span class="login-danger">*</span></label
+                            >Educação <span class="login-danger">*</span></label
                           >
                           <input
                             class="form-control"
                             type="text"
-                            value="M.B.B.S, M.S."
+                            value="Lorem ipsum"
                           />
                         </div>
                       </div>
                       <div class="col-12 col-md-6 col-xl-4">
                         <div class="input-block local-forms">
                           <label
-                            >Designation
+                            >designação
                             <span class="login-danger">*</span></label
                           >
                           <input
                             class="form-control"
                             type="text"
-                            value="Physician"
+                            value="Médica"
                           />
                         </div>
                       </div>
                       <div class="col-12 col-md-6 col-xl-4">
                         <div class="input-block local-forms">
                           <label
-                            >Department
+                            >Departamento
                             <span class="login-danger">*</span></label
                           >
                           <select class="form-control select">
-                            <option>Select Department</option>
-                            <option>Orthopedics</option>
-                            <option>Radiology</option>
-                            <option>Dentist</option>
+                            <option>Selecione Departamento</option>
+                            <option>Ortopedia</option>
+                            <option>Radiologia</option>
+                            <option>Dentista</option>
                           </select>
                         </div>
                       </div>
                       <div class="col-12 col-sm-12">
                         <div class="input-block local-forms">
                           <label
-                            >Address <span class="login-danger">*</span></label
+                            >Endereço <span class="login-danger">*</span></label
                           >
                           <textarea class="form-control" rows="3" cols="30">
-101, Elanxa Apartments, 340 N Madison Avenue</textarea
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos ipsum qui eum dolore non tempora impedit.</textarea
                           >
                         </div>
                       </div>
                       <div class="col-12 col-md-6 col-xl-3">
                         <div class="input-block local-forms">
                           <label
-                            >City <span class="login-danger">*</span></label
+                            >Cidade<span class="login-danger">*</span></label
                           >
                           <select class="form-control select">
-                            <option>Select City</option>
-                            <option>Alaska</option>
-                            <option>California</option>
+                            <option>Selecione a cidade</option>
+                            <option>São Paulo</option>
+                            <option>Rio de Janeiro</option>
+                            <option>Santos</option>
+                            <option>Campinas</option>
+                            <option>Guarulhos</option>
+                            <option>São Bernardo do Campo</option>
+                            <option>Osasco</option>
+                            <option>Barueri</option>
+                            <option>Santo André</option>
+                            <option>Niterói</option>
+                            <option>Duque de Caxias</option>
+                            <option>Nova Iguaçu</option>
+                            <option>São Gonçalo</option>
+                            <option>Petrópolis</option>
                           </select>
                         </div>
                       </div>
                       <div class="col-12 col-md-6 col-xl-3">
                         <div class="input-block local-forms">
                           <label
-                            >Country <span class="login-danger">*</span></label
+                            >País <span class="login-danger">*</span></label
                           >
                           <select class="form-control select">
-                            <option>Select Country</option>
-                            <option>Usa</option>
-                            <option>Uk</option>
-                            <option>Italy</option>
+                            <option>Selecione o estado</option>
+                            <option>Brasil</option>
                           </select>
                         </div>
                       </div>
                       <div class="col-12 col-md-6 col-xl-3">
                         <div class="input-block local-forms">
                           <label
-                            >State/Province
-                            <span class="login-danger">*</span></label
+                            >Estado <span class="login-danger">*</span></label
                           >
                           <select class="form-control select">
-                            <option>Select State</option>
-                            <option>Alaska</option>
-                            <option>California</option>
+                            <option>Selecione o estado</option>
+                            <option>Acre</option>
+                            <option>Alagoas</option>
+                            <option>Amapá</option>
+                            <option>Amazonas</option>
+                            <option>Bahia</option>
+                            <option>Ceará</option>
+                            <option>Distrito Federal</option>
+                            <option>Espírito Santo</option>
+                            <option>Goiás</option>
+                            <option>Maranhão</option>
+                            <option>Mato Grosso</option>
+                            <option>Mato Grosso do Sul</option>
+                            <option>Minas Gerais</option>
+                            <option>Pará</option>
+                            <option>Paraíba</option>
+                            <option>Paraná</option>
+                            <option>Pernambuco</option>
+                            <option>Piauí</option>
+                            <option>Rio de Janeiro</option>
+                            <option>Rio Grande do Norte</option>
+                            <option>Rio Grande do Sul</option>
+                            <option>Rondônia</option>
+                            <option>Roraima</option>
+                            <option>Santa Catarina</option>
+                            <option>São Paulo</option>
+                            <option>Sergipe</option>
+                            <option>Tocantins</option>
                           </select>
                         </div>
                       </div>
@@ -581,17 +633,7 @@
                           />
                         </div>
                       </div>
-                      <div class="col-12 col-sm-12">
-                        <div class="input-block local-forms">
-                          <label
-                            >Start Biography
-                            <span class="login-danger">*</span></label
-                          >
-                          <textarea class="form-control" rows="3" cols="30">
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquat enim ad minim veniam, quriesstrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</textarea
-                          >
-                        </div>
-                      </div>
+
                       <div class="col-12 col-md-6 col-xl-6">
                         <div class="input-block local-top-form">
                           <label class="local-top"
@@ -605,9 +647,11 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
                               id="file"
                               onchange="if (!window.__cfRLUnblockHandlers) return false; loadFile(event)"
                               class="hide-input"
-                              data-cf-modified-8ac322dcc679f6985de09428-
+                              data-cf-modified-59a698b85aa9560b4d73d8b9-
                             />
-                            <label for="file" class="upload">Choose File</label>
+                            <label for="file" class="upload"
+                              >Escolher arquivo</label
+                            >
                           </div>
                           <div class="upload-images upload-size">
                             <img src="assets/img/favicon.png" alt="Image" />
@@ -632,7 +676,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
                                 name="gender1"
                                 class="form-check-input"
                                 checked
-                              />Active
+                              />Ativa
                             </label>
                           </div>
                           <div class="form-check-inline">
@@ -641,7 +685,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
                                 type="radio"
                                 name="gender1"
                                 class="form-check-input"
-                              />In Active
+                              />Não ativo
                             </label>
                           </div>
                         </div>
@@ -683,8 +727,8 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
                         <span class="avatar">R</span>
                       </div>
                       <div class="list-body">
-                        <span class="message-author">Richard Miles </span>
-                        <span class="message-time">12:28 AM</span>
+                        <span class="message-author">Lorem Ipsum </span>
+                        <span class="message-time">12:28</span>
                         <div class="clearfix"></div>
                         <span class="message-content"
                           >Lorem ipsum dolor sit amet, consectetur
@@ -701,8 +745,8 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
                         <span class="avatar">J</span>
                       </div>
                       <div class="list-body">
-                        <span class="message-author">John Doe</span>
-                        <span class="message-time">1 Aug</span>
+                        <span class="message-author">johnDoe</span>
+                        <span class="message-time">1 de agosto</span>
                         <div class="clearfix"></div>
                         <span class="message-content"
                           >Lorem ipsum dolor sit amet, consectetur
@@ -719,8 +763,8 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
                         <span class="avatar">T</span>
                       </div>
                       <div class="list-body">
-                        <span class="message-author"> Tarah Shropshire </span>
-                        <span class="message-time">12:28 AM</span>
+                        <span class="message-author"> Lorem Ipsum </span>
+                        <span class="message-time">12:28</span>
                         <div class="clearfix"></div>
                         <span class="message-content"
                           >Lorem ipsum dolor sit amet, consectetur
@@ -737,8 +781,8 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
                         <span class="avatar">M</span>
                       </div>
                       <div class="list-body">
-                        <span class="message-author">Mike Litorus</span>
-                        <span class="message-time">12:28 AM</span>
+                        <span class="message-author">Lorem Ipsum </span>
+                        <span class="message-time">12:28</span>
                         <div class="clearfix"></div>
                         <span class="message-content"
                           >Lorem ipsum dolor sit amet, consectetur
@@ -755,8 +799,8 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
                         <span class="avatar">C</span>
                       </div>
                       <div class="list-body">
-                        <span class="message-author"> Catherine Manseau </span>
-                        <span class="message-time">12:28 AM</span>
+                        <span class="message-author"> Lorem Ipsum </span>
+                        <span class="message-time">12:28</span>
                         <div class="clearfix"></div>
                         <span class="message-content"
                           >Lorem ipsum dolor sit amet, consectetur
@@ -773,8 +817,8 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
                         <span class="avatar">D</span>
                       </div>
                       <div class="list-body">
-                        <span class="message-author"> Domenic Houston </span>
-                        <span class="message-time">12:28 AM</span>
+                        <span class="message-author"> Lorem Ipsum </span>
+                        <span class="message-time">12:28</span>
                         <div class="clearfix"></div>
                         <span class="message-content"
                           >Lorem ipsum dolor sit amet, consectetur
@@ -791,8 +835,8 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
                         <span class="avatar">B</span>
                       </div>
                       <div class="list-body">
-                        <span class="message-author"> Buster Wigton </span>
-                        <span class="message-time">12:28 AM</span>
+                        <span class="message-author"> Lorem Ipsum </span>
+                        <span class="message-time">12:28</span>
                         <div class="clearfix"></div>
                         <span class="message-content"
                           >Lorem ipsum dolor sit amet, consectetur
@@ -809,8 +853,8 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
                         <span class="avatar">R</span>
                       </div>
                       <div class="list-body">
-                        <span class="message-author"> Rolland Webber </span>
-                        <span class="message-time">12:28 AM</span>
+                        <span class="message-author"> Lorem Ipsum </span>
+                        <span class="message-time">12:28</span>
                         <div class="clearfix"></div>
                         <span class="message-content"
                           >Lorem ipsum dolor sit amet, consectetur
@@ -827,8 +871,8 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
                         <span class="avatar">C</span>
                       </div>
                       <div class="list-body">
-                        <span class="message-author"> Claire Mapes </span>
-                        <span class="message-time">12:28 AM</span>
+                        <span class="message-author"> Lorem Ipsum </span>
+                        <span class="message-time">12:28</span>
                         <div class="clearfix"></div>
                         <span class="message-content"
                           >Lorem ipsum dolor sit amet, consectetur
@@ -846,7 +890,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
                       </div>
                       <div class="list-body">
                         <span class="message-author">Melita Faucher</span>
-                        <span class="message-time">12:28 AM</span>
+                        <span class="message-time">12:28</span>
                         <div class="clearfix"></div>
                         <span class="message-content"
                           >Lorem ipsum dolor sit amet, consectetur
@@ -863,8 +907,8 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
                         <span class="avatar">J</span>
                       </div>
                       <div class="list-body">
-                        <span class="message-author">Jeffery Lalor</span>
-                        <span class="message-time">12:28 AM</span>
+                        <span class="message-author">Lorem Ipsum </span>
+                        <span class="message-time">12:28</span>
                         <div class="clearfix"></div>
                         <span class="message-content"
                           >Lorem ipsum dolor sit amet, consectetur
@@ -881,8 +925,8 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
                         <span class="avatar">L</span>
                       </div>
                       <div class="list-body">
-                        <span class="message-author">Loren Gatlin</span>
-                        <span class="message-time">12:28 AM</span>
+                        <span class="message-author">Lorem Ipsum </span>
+                        <span class="message-time">12:28</span>
                         <div class="clearfix"></div>
                         <span class="message-content"
                           >Lorem ipsum dolor sit amet, consectetur
@@ -899,8 +943,8 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
                         <span class="avatar">T</span>
                       </div>
                       <div class="list-body">
-                        <span class="message-author">Tarah Shropshire</span>
-                        <span class="message-time">12:28 AM</span>
+                        <span class="message-author">Lorem Ipsum </span>
+                        <span class="message-time">12:28</span>
                         <div class="clearfix"></div>
                         <span class="message-content"
                           >Lorem ipsum dolor sit amet, consectetur
@@ -913,7 +957,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
               </ul>
             </div>
             <div class="topnav-dropdown-footer">
-              <a href="chat.html">See all messages</a>
+              <a href="chat.html">Veja todas as mensagens</a>
             </div>
           </div>
         </div>
@@ -923,12 +967,12 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
           <div class="modal-content">
             <div class="modal-body text-center">
               <img src="assets/img/sent.png" alt width="50" height="46" />
-              <h3>Are you sure want to delete this ?</h3>
+              <h3>Você tem certeza que deseja excluir isso?</h3>
               <div class="m-t-20">
                 <a href="#" class="btn btn-white" data-bs-dismiss="modal"
-                  >Close</a
+                  >Fechar</a
                 >
-                <button type="submit" class="btn btn-danger">Delete</button>
+                <button type="submit" class="btn btn-danger">Excluir</button>
               </div>
             </div>
           </div>
@@ -936,45 +980,51 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
       </div>
     </div>
     <div class="sidebar-overlay" data-reff></div>
+
     <script
       src="assets/js/jquery-3.7.1.min.js"
-      type="8ac322dcc679f6985de09428-text/javascript"
+      type="59a698b85aa9560b4d73d8b9-text/javascript"
     ></script>
+
     <script
       src="assets/js/bootstrap.bundle.min.js"
-      type="8ac322dcc679f6985de09428-text/javascript"
+      type="59a698b85aa9560b4d73d8b9-text/javascript"
     ></script>
+
     <script
       src="assets/js/feather.min.js"
-      type="8ac322dcc679f6985de09428-text/javascript"
+      type="59a698b85aa9560b4d73d8b9-text/javascript"
     ></script>
+
     <script
       src="assets/js/jquery.slimscroll.js"
-      type="8ac322dcc679f6985de09428-text/javascript"
+      type="59a698b85aa9560b4d73d8b9-text/javascript"
     ></script>
+
     <script
       src="assets/js/select2.min.js"
-      type="8ac322dcc679f6985de09428-text/javascript"
+      type="59a698b85aa9560b4d73d8b9-text/javascript"
     ></script>
 
     <script
       src="assets/plugins/moment/moment.min.js"
-      type="8ac322dcc679f6985de09428-text/javascript"
+      type="59a698b85aa9560b4d73d8b9-text/javascript"
     ></script>
     <script
       src="assets/js/bootstrap-datetimepicker.min.js"
-      type="8ac322dcc679f6985de09428-text/javascript"
+      type="59a698b85aa9560b4d73d8b9-text/javascript"
     ></script>
+
     <script
       src="assets/js/app.js"
-      type="8ac322dcc679f6985de09428-text/javascript"
+      type="59a698b85aa9560b4d73d8b9-text/javascript"
     ></script>
     <script
       src="../../cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js"
-      data-cf-settings="8ac322dcc679f6985de09428-|49"
+      data-cf-settings="59a698b85aa9560b4d73d8b9-|49"
       defer
     ></script>
   </body>
 
-  <!-- Mirrored from preclinic.dreamstechnologies.com/html/template/edit-patient.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 04 Jun 2024 21:43:14 GMT -->
+  <!-- Mirrored from preclinic.dreamstechnologies.com/html/template/edit-doctor.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 04 Jun 2024 21:43:07 GMT -->
 </html>
