@@ -1,7 +1,16 @@
 @font-face {
-  font-family: 'simple-line-icons';
-  src: url('https://preclinic.dreamstechnologies.com/html/template/assets/plugins/simpleline/fonts/Simple-Line-Icons.eot?v=2.4.0');
-  src: url('https://preclinic.dreamstechnologies.com/html/template/assets/plugins/simpleline/fonts/Simple-Line-Icons.eot?v=2.4.0#iefix') format('embedded-opentype'), url('https://preclinic.dreamstechnologies.com/html/template/assets/plugins/simpleline/fonts/Simple-Line-Icons.woff2?v=2.4.0') format('woff2'), url('https://preclinic.dreamstechnologies.com/html/template/assets/plugins/simpleline/fonts/Simple-Line-Icons.ttf?v=2.4.0') format('truetype'), url('https://preclinic.dreamstechnologies.com/html/template/assets/plugins/simpleline/fonts/Simple-Line-Icons.woff?v=2.4.0') format('woff'), url('https://preclinic.dreamstechnologies.com/html/template/assets/plugins/simpleline/fonts/Simple-Line-Icons.svg?v=2.4.0#simple-line-icons') format('svg');
+  font-family: "simple-line-icons";
+  src: url("https://preclinic.dreamstechnologies.com/html/template/../assets/plugins/simpleline/fonts/Simple-Line-Icons.eot?v=2.4.0");
+  src: url("https://preclinic.dreamstechnologies.com/html/template/../assets/plugins/simpleline/fonts/Simple-Line-Icons.eot?v=2.4.0#iefix")
+      format("embedded-opentype"),
+    url("https://preclinic.dreamstechnologies.com/html/template/../assets/plugins/simpleline/fonts/Simple-Line-Icons.woff2?v=2.4.0")
+      format("woff2"),
+    url("https://preclinic.dreamstechnologies.com/html/template/../assets/plugins/simpleline/fonts/Simple-Line-Icons.ttf?v=2.4.0")
+      format("truetype"),
+    url("https://preclinic.dreamstechnologies.com/html/template/../assets/plugins/simpleline/fonts/Simple-Line-Icons.woff?v=2.4.0")
+      format("woff"),
+    url("https://preclinic.dreamstechnologies.com/html/template/../assets/plugins/simpleline/fonts/Simple-Line-Icons.svg?v=2.4.0#simple-line-icons")
+      format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -198,7 +207,7 @@
 .icon-social-dropbox,
 .icon-social-vkontakte,
 .icon-social-steam {
-  font-family: 'simple-line-icons';
+  font-family: "simple-line-icons";
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -777,9 +786,8 @@
   content: "\e620";
 }
 
-
 .si {
-  font-family: 'simple-line-icons';
+  font-family: "simple-line-icons";
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -884,7 +892,7 @@
 
 .si-arrow-down:before {
   content: "\e604";
-  font-size:10px;
+  font-size: 10px;
 }
 
 .si-arrow-left:before {
@@ -893,12 +901,12 @@
 
 .si-arrow-right:before {
   content: "\e606";
-  font-size:10px;
+  font-size: 10px;
 }
 
 .si-arrow-up:before {
   content: "\e607";
-  font-size:10px;
+  font-size: 10px;
 }
 
 .si-arrow-up-circle:before {
