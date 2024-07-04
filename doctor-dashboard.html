@@ -1,30 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
-<!-- Mirrored from preclinic.dreamstechnologies.com/html/template/doctor-dashboard.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 04 Jun 2024 21:42:51 GMT -->
+<html lang="pt-br">
 
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0" />
   <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png" />
-  <link rel="icon" type="../image/png" sizes="32x32" href="favicon_io/favicon-32x32.png" />
-  <link rel="icon" type="../image/png" sizes="16x16" href="favicon_io/favicon-16x16.png" />
-  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png" />
+  <link rel="manifest" href="site.webmanifest" />
+
 
   <title>Higia</title>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
 
-  <link rel="stylesheet" type="text/css" href="../../assets/css/bootstrap.min.css" />
-
-  <link rel="stylesheet" href="../../assets/plugins/fontawesome/css/fontawesome.min.css" />
-  <link rel="stylesheet" href="../../assets/plugins/fontawesome/css/all.min.css" />
-
-  <link rel="stylesheet" type="text/css" href="../../assets/css/select2.min.css" />
-
-  <link rel="stylesheet" href="../../assets/plugins/datatables/datatables.min.css" />
-
-  <link rel="stylesheet" href="../../assets/css/feather.css" />
-
-  <link rel="stylesheet" type="text/css" href="../../assets/css/style.css" />
+  <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../assets/plugins/fontawesome/css/fontawesome.min.css" />
+  <link rel="stylesheet" href="../assets/plugins/fontawesome/css/all.min.css" />
+  <link rel="stylesheet" type="text/css" href="../assets/css/select2.min.css" />
+  <link rel="stylesheet" href="../assets/plugins/datatables/datatables.min.css" />
+  <link rel="stylesheet" href="../assets/css/feather.css" />
+  <link rel="stylesheet" type="text/css" href="../assets/css/style.css" />
 </head>
 
 <body>
@@ -32,7 +27,7 @@
     <div class="header">
       <div class="header-left">
         <a href="index.html" class="logo">
-          <img src="../../assets/img/logo 1.png" width="100" height="40" alt />
+          <img src="assets/img/logo 1.png" width="100" height="40" alt />
         </a>
       </div>
       <a id="toggle_btn" href="javascript:void(0);"><img src="../../assets/img/icons/bar-icon.svg" alt /></a>
@@ -130,7 +125,7 @@
                 </li>
               </ul>
             </div>
-          </div>  
+          </div>
         </li>
         <!-- <li class="nav-item dropdown d-none d-md-block">
             <a href="javascript:void(0);" id="open_msg_box" class="hasnotifications nav-link"><img
@@ -283,7 +278,7 @@
         </div>
 
 
-        
+
         <div class="row">
           <div class="col-md-6 col-sm-6 col-lg-6 col-xl-3">
             <div class="dash-widget">
@@ -334,76 +329,236 @@
         </div>
 
 
+
         <div class="row">
-          <div class="col-12 col-md-12 col-lg-12 col-xl-7">
+          <div class="col-12 col-xl-12">
             <div class="card">
-              <div class="card-body">
-                <div class="chart-title patient-visit mb-0">
-                  <h4>Income</h4>
-                  <div class="income-value">
-                    <h3><span>$</span> 20,560</h3>
-                    <p>
-                      <span class="passive-view"><i class="feather-arrow-up-right me-1"></i>40%</span>
-                      vs last month
-                    </p>
-                  </div>
-                  <div class="input-block mb-0">
-                    <select class="form-control select">
-                      <option>2022</option>
-                      <option>2021</option>
-                      <option>2020</option>
-                      <option>2019</option>
-                    </select>
-                  </div>
+              <div class="card-header pb-0">
+                <h4 class="card-title d-inline-block">Pacientes recentes</h4>
+                <a href="patients.html" class="float-end patient-views">Mostre tudo</a>
+              </div>
+              <div class="card-block table-dash">
+                <div class="table-responsive">
+                  <table class="table mb-0 border-0 datatable custom-table">
+                    <thead>
+                      <tr>
+                        <th>
+                          <div class="form-check check-tables">
+                            <input class="form-check-input" type="checkbox" value="something" />
+                          </div>
+                        </th>
+                        <th>Carterinha</th>
+                        <th>Nome do paciente</th>
+                        <th> Idade </th>
+
+                        <th>Médico </th>
+
+                        <th>Tempo</th>
+
+                        <th>Diagnóstico</th>
+
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <div class="form-check check-tables">
+                            <input class="form-check-input" type="checkbox" value="something" />
+                          </div>
+                        </td>
+                        <td>R00001</td>
+                        <td class="table-image">
+                          <img width="28" height="28" class="rounded-circle"
+                            src="../../assets/img/profiles/avatar-02.jpg" alt />
+                          <h2>Lorem Ipsum</h2>
+                        </td>
+                        <td>21</td>
+                        <td class="table-image">
+                          <img width="28" height="28" class="rounded-circle"
+                            src="../../assets/img/profiles/avatar-02.jpg" alt />
+                          <h2>Lorem Ipsum</h2>
+                        </td>
+
+
+                        <td>12.05.2022 at 7.00 PM </td>
+                        <td>Lorem Ipsum</td>
+                        <td class="text-end">
+                          <div class="dropdown dropdown-action">
+                            <a href="#" class="action-icon dropdown-toggle" data-bs-toggle="dropdown"
+                              aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
+                            <div class="dropdown-menu dropdown-menu-end">
+                              <a class="dropdown-item" href="edit-patient.html"><i
+                                  class="fa-solid fa-pen-to-square m-r-5"></i>
+                                Editar</a>
+                              <a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                data-bs-target="#delete_appointment"><i class="fa fa-trash-alt m-r-5"></i>
+                                Excluir</a>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="form-check check-tables">
+                            <input class="form-check-input" type="checkbox" value="something" />
+                          </div>
+                        </td>
+                        <td>R00002</td>
+                        <td class="table-image">
+                          <img width="28" height="28" class="rounded-circle"
+                            src="../../assets/img/profiles/avatar-03.jpg" alt />
+                          <h2>Lorem Ipsum</h2>
+                        </td>
+
+                        <td>23</td>
+
+                        <td class="table-image">
+                          <img width="28" height="28" class="rounded-circle"
+                            src="../../assets/img/profiles/avatar-03.jpg" alt />
+                          <h2>Lorem Ipsum</h2>
+                        </td>
+
+                        <td>12.05.2022 at 7.00 PM</td>
+
+                        <td>Lorem Ipsum</td>
+
+                        <td class="text-end">
+                          <div class="dropdown dropdown-action">
+                            <a href="#" class="action-icon dropdown-toggle" data-bs-toggle="dropdown"
+                              aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
+                            <div class="dropdown-menu dropdown-menu-end">
+                              <a class="dropdown-item" href="edit-patient.html"><i
+                                  class="fa-solid fa-pen-to-square m-r-5"></i>
+                                Editar</a>
+                              <a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                data-bs-target="#delete_appointment"><i class="fa fa-trash-alt m-r-5"></i>
+                                Excluir</a>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="form-check check-tables">
+                            <input class="form-check-input" type="checkbox" value="something" />
+                          </div>
+                        </td>
+                        <td>R00003</td>
+                        <td class="table-image">
+                          <img width="28" height="28" class="rounded-circle"
+                            src="../../assets/img/profiles/avatar-04.jpg" alt />
+                          <h2>Lorem ipsum</h2>
+                        </td>
+                        <td>25</td>
+
+
+                        <td class="table-image">
+                          <img width="28" height="28" class="rounded-circle"
+                            src="../../assets/img/profiles/avatar-03.jpg" alt />
+                          <h2>Lorem Ipsum</h2>
+                        </td>
+
+
+
+                        <td>12.05.2022 at 7.00 pm</td>
+                        <td>Lorem ipsum</td>
+                        <td class="text-end">
+                          <div class="dropdown dropdown-action">
+                            <a href="#" class="action-icon dropdown-toggle" data-bs-toggle="dropdown"
+                              aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
+                            <div class="dropdown-menu dropdown-menu-end">
+                              <a class="dropdown-item" href="edit-patient.html"><i
+                                  class="fa-solid fa-pen-to-square m-r-5"></i>
+                                Editar</a>
+                              <a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                data-bs-target="#delete_appointment"><i class="fa fa-trash-alt m-r-5"></i>
+                                Excluir</a>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="form-check check-tables">
+                            <input class="form-check-input" type="checkbox" value="something" />
+                          </div>
+                        </td>
+                        <td>R00004</td>
+                        <td class="table-image">
+                          <img width="28" height="28" class="rounded-circle"
+                            src="../../assets/img/profiles/avatar-05.jpg" alt />
+                          <h2>Lorem Ipsum</h2>
+                        </td>
+                        <td>21</td>
+
+
+                        <td class="table-image">
+                          <img width="28" height="28" class="rounded-circle"
+                            src="../../assets/img/profiles/avatar-03.jpg" alt />
+                          <h2>Lorem Ipsum</h2>
+                        </td>
+
+
+                        <td>12.05.2022 at 7.00 PM</td>
+                        <td>Lorem Ipsum</td>
+
+                        <td class="text-end">
+                          <div class="dropdown dropdown-action">
+                            <a href="#" class="action-icon dropdown-toggle" data-bs-toggle="dropdown"
+                              aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
+                            <div class="dropdown-menu dropdown-menu-end">
+                              <a class="dropdown-item" href="edit-patient.html"><i
+                                  class="fa-solid fa-pen-to-square m-r-5"></i>
+                                Edit</a>
+                              <a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                data-bs-target="#delete_appointment"><i class="fa fa-trash-alt m-r-5"></i>
+                                Excluir</a>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
-                <div id="apexcharts-area"></div>
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-12 col-lg-6 col-xl-3 d-flex">
-            <div class="card">
-              <div class="card-body">
-                <div id="radial-patients"></div>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-12 col-lg-6 col-xl-2 d-flex">
-            <div class="struct-point">
-              <div class="card patient-structure">
-                <div class="card-body">
-                  <h5>New Patients</h5>
-                  <h3>
-                    56<span class="status-green"><img src="../assets/img/icons/sort-icon-01.svg" alt
-                        class="me-1" />60%</span>
-                  </h3>
-                </div>
-              </div>
-              <div class="card patient-structure">
-                <div class="card-body">
-                  <h5>Old Patients</h5>
-                  <h3>
-                    35<span class="status-pink"><img src="../assets/img/icons/sort-icon-02.svg" alt
-                        class="me-1" />-20%</span>
-                  </h3>
-                </div>
-              </div>
-            </div>
-          </div>
+        </div>
+
+
+
+        <div class="row">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         </div>
         <div class="row">
           <div class="col-12 col-md-12 col-xl-7">
             <div class="card">
               <div class="card-body">
                 <div class="chart-title patient-visit">
-                  <h4>Activity Chart</h4>
+                  <h4>Gráfico de atividades</h4>
                   <div>
                     <ul class="nav chat-user-total">
                       <li>
-                        <i class="fa fa-circle low-users" aria-hidden="true"></i>Low
+                        <i class="fa fa-circle low-users" aria-hidden="true"></i>Baixo
                       </li>
                       <li>
                         <i class="fa fa-circle current-users" aria-hidden="true"></i>
-                        High
+                        Alto
                       </li>
                     </ul>
                   </div>
@@ -424,7 +579,7 @@
                 <div class="card">
                   <div class="card-header">
                     <h4 class="card-title d-inline-block">
-                      Recent Appointments
+                      Compromissos recentes
                     </h4>
                     <a href="appointments.html" class="patient-views float-end">Show all</a>
                   </div>

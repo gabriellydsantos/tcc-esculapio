@@ -567,7 +567,7 @@ var sColStacked = {
         colors: ['transparent']
     },
     series: [{
-        name: 'Low',
+        name: 'Baixo',
 		color: '#D5D7ED',
         data: [10, 30, 10, 30, 10, 30, 30]
     },{
@@ -621,7 +621,7 @@ var sCol = {
         data: [44, 55, 57, 56, 61, 58, 63, 60, 66]
     },
 	{
-		name: 'Low',	
+		name: 'Baixo',	
 		color: 'rgba(46, 55, 164, 0.05)',
         data: [44, 55, 57, 56, 61, 58, 63, 60, 66]
     }],
@@ -680,16 +680,16 @@ var sColStacked = {
         colors: ['transparent']
     },
     series: [{
-        name: 'Low',
+        name: 'Baixo',
 		color: '#D5D7ED',
         data: [20, 30, 41, 67, 22, 43, 40,10,30,20,40]
     },{
-        name: 'High',
+        name: 'Alta',
 		color: '#2E37A4',
         data: [13, 23, 20, 8, 13, 27, 30,25,10,15,20]
     }],
     xaxis: {
-        categories: ['Jan','Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+        categories: ['Jan','Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dec'],
     },
 	
 }
@@ -775,7 +775,7 @@ if ($('#apexcharts-area').length > 0) {
 			data: [45, 60, 75, 51, 42, 42, 30]
 		}],
 		xaxis: {
-			categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul'],
+            categories: ['Jan','Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dec'],
 		}
 	}
 	var chart = new ApexCharts(
@@ -807,7 +807,7 @@ if ($('#health-chart').length > 0) {
 			data: [20, 40, 85, 25, 50, 30, 50, 20, 50, 40, 30, 20]
 		}],
 		xaxis: {
-			categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Nov', 'Dec'],
+            categories: ['Jan','Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dec']
 		}
 	}
 	var chart = new ApexCharts(
