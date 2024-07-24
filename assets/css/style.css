@@ -803,7 +803,8 @@ textarea.form-control {
     z-index: 1039;
     height: 70px;
     background: #161D53;
-    box-shadow: 0 0 14px rgba(204, 204, 204, .25)
+    box-shadow: 0 0 14px rgba(204, 204, 204, .25);
+
 }
 
 .header .header-left {
