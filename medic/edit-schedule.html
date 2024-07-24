@@ -1,29 +1,37 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<!-- Mirrored from preclinic.dreamstechnologies.com/html/template/add-appointment.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 04 Jun 2024 21:43:17 GMT -->
 
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0" />
-  <link rel="shortcut icon" type="image/x-icon" href="../assets/img/favicon.png" />
-  <title>Preclinic - Medical & Hospital - Bootstrap 5 Admin Template</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="../favicon_io/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon_io/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="../favicon_io/favicon-16x16.png" />
+  <link rel="manifest" href="../site.webmanifest" />
+  <title>Higia</title>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
 
   <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.min.css" />
-
   <link rel="stylesheet" href="../assets/plugins/fontawesome/css/fontawesome.min.css" />
   <link rel="stylesheet" href="../assets/plugins/fontawesome/css/all.min.css" />
-
   <link rel="stylesheet" type="text/css" href="../assets/css/select2.min.css" />
-
-  <link rel="stylesheet" href="../assets/css/bootstrap-datetimepicker.min.css" />
-
+  <link rel="stylesheet" href="../assets/plugins/datatables/datatables.min.css" />
   <link rel="stylesheet" href="../assets/css/feather.css" />
-
   <link rel="stylesheet" type="text/css" href="../assets/css/style.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 </head>
 
+
+
+
 <body>
+
+
+
+
+
+
   <div vw class="enabled">
     <div vw-access-button class="active"></div>
     <div vw-plugin-wrapper>
@@ -37,6 +45,10 @@
 
 
   <div class="main-wrapper">
+
+
+
+
 
 
     <div class="header">
@@ -179,6 +191,7 @@
         </div>
       </div>
     </div>
+
     <div class="sidebar" id="sidebar">
       <div class="sidebar-inner slimscroll">
         <div id="sidebar-menu" class="sidebar-menu">
@@ -189,8 +202,8 @@
                 <span> Controle </span>
                 <span class="menu-arrow"></span></a>
               <ul style="display: none">
-                <li><a href="index.html">Painel do Admin</a></li>
-                <li><a href="doctor-dashboard.html">Painel do Médico</a></li>
+               <li><a href="/admin/index.html">Painel do Admin</a></li>
+               <li><a href="/admin/doctor-dashboard.html">Painel do Médico</a></li>
                 <li>
                   <a href="patient-dashboard.html">Painel do Paciente</a>
                 </li>
@@ -199,56 +212,77 @@
             <li class="submenu">
               <a href="#"><span class="menu-side"><img src="../assets/img/icons/menu-icon-02.svg" alt="" /></span>
                 <span> Médicos </span> <span class="menu-arrow"></span></a>
-              <ul style="display: none">
-                <li><a href="doctors.html">Lista de Médicos</a></li>
-                <li><a href="add-doctor.html">Adicionar Médico</a></li>
-                <li><a href="edit-doctor.html">Editar Médico</a></li>
-                <li><a href="doctor-profile.html">Perfil do Médico</a></li>
+                <ul>
+                 <li><a href="/admin/doctors.html">Lista de Médicos</a></li>
+                 <li><a href="/admin/add-doctor.html">Adicionar Médico</a></li>
+                 <li><a href="/admin/edit-doctor.html">Editar Médico</a></li>
+                 <li><a href="/admin/doctor-profile.html">Perfil do Médico</a></li>
               </ul>
             </li>
             <li class="submenu">
               <a href="#"><span class="menu-side"><img src="../assets/img/icons/menu-icon-03.svg" alt="" /></span>
                 <span> Pacientes </span> <span class="menu-arrow"></span></a>
               <ul style="display: none">
-                <li><a href="patients.html">Lista de Pacientes</a></li>
-                <li><a href="add-patient.html">Adicionar Paciente</a></li>
-                <li><a href="edit-patient.html">Editar Paciente</a></li>
-                <li><a href="patient-profile.html">Perfil do Paciente</a></li>
+               <li><a href="/admin/patients.html">Lista de Pacientes</a></li>
+               <li><a href="/admin/add-patient.html">Adicionar Paciente</a></li>
+               <li><a href="/admin/edit-patient.html">Editar Paciente</a></li>
+               <li><a href="/admin/patient-profile.html">Perfil do Paciente</a></li>
               </ul>
             </li>
             <li class="submenu">
               <a href="#"><span class="menu-side"><img src="../assets/img/icons/menu-icon-08.svg" alt="" /></span>
                 <span> Funcionários </span> <span class="menu-arrow"></span></a>
               <ul style="display: none">
-                <li><a href="staff-list.html">Lista de Funcionários</a></li>
-                <li><a href="add-staff.html">Adicionar Funcionário</a></li>
+               <li><a href="/admin/staff-list.html">Lista de Funcionários</a></li>
+               <li><a href="/admin/add-staff.html">Adicionar Funcionário</a></li>
                 <li>
                   <a href="staff-profile.html">Perfil do Funcionário</a>
                 </li>
-                <li><a href="staff-leave.html">Licenças</a></li>
-                <li><a href="staff-holiday.html">Feriados</a></li>
-                <li><a href="staff-attendance.html">Presenças</a></li>
+               <li><a href="/admin/staff-leave.html">Licenças</a></li>
+               <li><a href="/admin/staff-holiday.html">Feriados</a></li>
+               <li><a href="/admin/staff-attendance.html">Presenças</a></li>
               </ul>
             </li>
-            <li class="submenu">
+            <!-- <li class="submenu">
               <a href="#"><span class="menu-side"><img src="../assets/img/icons/menu-icon-04.svg" alt="" /></span>
                 <span> Consultas </span> <span class="menu-arrow"></span></a>
               <ul style="display: none">
-                <li><a href="appointments.html">Lista de Consultas</a></li>
-                <li><a href="add-appointment.html">Agendar Consulta</a></li>
-                <li><a href="edit-appointment.html">Editar Consulta</a></li>
+               <li><a href="/admin/appointments.html">Lista de Consultas</a></li>
+               <li><a href="/admin/add-appointment.html">Agendar Consulta</a></li>
+               <li><a href="/admin/edit-appointment.html">Editar Consulta</a></li>
               </ul>
-            </li>
-            <li class="submenu">
+            </li> -->
+            <!-- <li class="submenu">
               <a href="#"><span class="menu-side"><img src="../assets/img/icons/menu-icon-05.svg" alt="" /></span>
                 <span> Agenda do Médico </span>
                 <span class="menu-arrow"></span></a>
               <ul style="display: none">
-                <li><a href="schedule.html">Lista de Agendas</a></li>
-                <li><a href="add-schedule.html">Adicionar Agenda</a></li>
-                <li><a href="edit-schedule.html">Editar Agenda</a></li>
+               <li><a href="/admin/schedule.html">Lista de Agendas</a></li>
+               <li><a href="/admin/add-schedule.html">Adicionar Agenda</a></li>
+               <li><a href="/admin/edit-schedule.html">Editar Agenda</a></li>
+              </ul>
+            </li> -->
+
+
+            <li class="submenu">
+              <a href="#"><span class="menu-side"><img src="../assets/img/icons/menu-icon-06.svg" alt /></span>
+                <span> Departments </span> <span class="menu-arrow"></span></a>
+              <ul style="display: none">
+                <li>
+                  <a class="" href="departments.html">Departamento</a>
+                </li>
+               <li><a href="/admin/add-department.html">Add departamento</a></li>
+               <li><a href="/admin/edit-department.html">Editar departamento</a></li>
               </ul>
             </li>
+
+
+
+
+
+
+
+
           </ul>
           <div class="logout-btn">
             <a href="login.html"><span class="menu-side"><img src="../assets/img/icons/logout.svg" alt="" /></span>
@@ -265,12 +299,12 @@
             <div class="col-sm-12">
               <ul class="breadcrumb">
                 <li class="breadcrumb-item">
-                  <a href="appointments.html">Appointment </a>
+                  <a href="schedule.html">Cronograma médico </a>
                 </li>
                 <li class="breadcrumb-item">
                   <i class="feather-chevron-right"></i>
                 </li>
-                <li class="breadcrumb-item active">Book Appointment</li>
+                <li class="breadcrumb-item active">Cronograma de edição</li>
               </ul>
             </div>
           </div>
@@ -284,125 +318,80 @@
                   <div class="row">
                     <div class="col-12">
                       <div class="form-heading">
-                        <h4>Patient Details</h4>
-                      </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-xl-4">
-                      <div class="input-block local-forms">
-                        <label>First Name
-                          <span class="login-danger">*</span></label>
-                        <input class="form-control" type="text" />
-                      </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-xl-4">
-                      <div class="input-block local-forms">
-                        <label>Last Name
-                          <span class="login-danger">*</span></label>
-                        <input class="form-control" type="text" />
-                      </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-xl-4">
-                      <div class="input-block select-gender">
-                        <label class="gen-label">Gender<span class="login-danger">*</span></label>
-                        <div class="form-check-inline">
-                          <label class="form-check-label">
-                            <input type="radio" name="gender" class="form-check-input" />Male
-                          </label>
-                        </div>
-                        <div class="form-check-inline">
-                          <label class="form-check-label">
-                            <input type="radio" name="gender" class="form-check-input" />Female
-                          </label>
-                        </div>
+                        <h4>Editar Agendamento</h4>
                       </div>
                     </div>
                     <div class="col-12 col-md-6 col-xl-6">
                       <div class="input-block local-forms">
-                        <label>Mobile <span class="login-danger">*</span></label>
-                        <input class="form-control" type="text" />
+                        <label>Nome
+                          <span class="login-danger">*</span></label>
+                        <input class="form-control" type="text" value="Lorem Ipsum" />
                       </div>
                     </div>
-                    <div class="col-12 col-md-6 col-xl-6">
-                      <div class="input-block local-forms">
-                        <label>Email <span class="login-danger">*</span></label>
-                        <input class="form-control" type="email" />
-                      </div>
-                    </div>
-                    <div class="col-12 col-sm-12">
-                      <div class="input-block local-forms">
-                        <label>Address <span class="login-danger">*</span></label>
-                        <textarea class="form-control" rows="3" cols="30"></textarea>
-                      </div>
-                    </div>
-                    <div class="col-12">
-                      <div class="form-heading">
-                        <h4>Appointment Details</h4>
-                      </div>
-                    </div>
+
                     <div class="col-12 col-md-6 col-xl-4">
                       <div class="input-block local-forms cal-icon">
-                        <label>Date of Appointment
+                        <label>Data de nascimento
                           <span class="login-danger">*</span></label>
-                        <input class="form-control datetimepicker" type="text" />
+                        <input class="form-control datetimepicker" type="text" value="28-11-22" />
                       </div>
                     </div>
+
+
+
+
+
+                    <!-- <div class="col-12 col-md-6 col-xl-4">
+                      <div class="input-block local-forms cal-icon">
+                        <label>Available Days
+                          <span class="login-danger">*</span></label>
+                        <input class="form-control datetimepicker" type="text" value="28-11-22" />
+                      </div>
+                    </div> -->
                     <div class="col-12 col-md-6 col-xl-4">
                       <div class="input-block local-forms">
-                        <label>From <span class="login-danger">*</span></label>
+                        <label>De <span class="login-danger">*</span></label>
                         <div class="time-icon">
-                          <input type="text" class="form-control" id="datetimepicker3" />
+                          <input type="text" class="form-control" id="datetimepicker3" value="09:00" />
                         </div>
                       </div>
                     </div>
                     <div class="col-12 col-md-6 col-xl-4">
                       <div class="input-block local-forms">
-                        <label>To <span class="login-danger">*</span></label>
+                        <label>Para <span class="login-danger">*</span></label>
                         <div class="time-icon">
-                          <input type="text" class="form-control" id="datetimepicker4" />
+                          <input type="text" class="form-control" id="datetimepicker4" value="06:00" />
                         </div>
                       </div>
                     </div>
-                    <div class="col-12 col-md-6 col-xl-6">
-                      <div class="input-block local-forms">
-                        <label>Consulting Doctor</label>
-                        <select class="form-control select">
-                          <option>Select Doctor</option>
-                          <option>Dr.Bernardo James</option>
-                          <option>Dr.Andrea Lalema</option>
-                          <option>Dr.William Stephin</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-xl-6">
-                      <div class="input-block local-forms">
-                        <label>Treatment </label>
-                        <input class="form-control" type="text" />
-                      </div>
-                    </div>
-                    <div class="col-12 col-sm-12">
+                    <!-- <div class="col-12 col-sm-12">
                       <div class="input-block local-forms">
                         <label>Notes <span class="login-danger">*</span></label>
                         <textarea class="form-control" rows="3" cols="30"></textarea>
                       </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-xl-6">
-                      <div class="input-block local-top-form">
-                        <label class="local-top">Avatar <span class="login-danger">*</span></label>
-                        <div class="settings-btn upload-files-avator">
-                          <input type="file" accept="image/*" name="image" id="file"
-                            onchange="if (!window.__cfRLUnblockHandlers) return false; loadFile(event)"
-                            class="hide-input" data-cf-modified-0384ef50617693332c161f48- />
-                          <label for="file" class="upload">Choose File</label>
+                    </div> -->
+                    <div class="col-12 col-md-6 col-xl-4">
+                      <div class="input-block select-gender">
+                        <label class="gen-label">Status <span class="login-danger">*</span></label>
+                        <div class="form-check-inline">
+                          <label class="form-check-label">
+                            <input type="radio" name="gender" class="form-check-input" checked />Ativa
+                          </label>
+                        </div>
+                        <div class="form-check-inline">
+                          <label class="form-check-label">
+                            <input type="radio" name="gender" class="form-check-input" />Em ativo
+                          </label>
                         </div>
                       </div>
                     </div>
                     <div class="col-12">
                       <div class="doctor-submit text-end">
                         <button type="submit" class="btn btn-primary submit-form me-2">
-                          Submit
+                          Criar programação
                         </button>
                         <button type="submit" class="btn btn-primary cancel-form">
-                          Cancel
+                          Cancelar
                         </button>
                       </div>
                     </div>
@@ -652,19 +641,19 @@
     </div>
   </div>
   <div class="sidebar-overlay" data-reff></div>
-  <script src="../assets/js/jquery-3.7.1.min.js" type="0384ef50617693332c161f48-text/javascript"></script>
-  <script src="../assets/js/bootstrap.bundle.min.js" type="0384ef50617693332c161f48-text/javascript"></script>
-  <script src="../assets/js/feather.min.js" type="0384ef50617693332c161f48-text/javascript"></script>
-  <script src="../assets/js/jquery.slimscroll.js" type="0384ef50617693332c161f48-text/javascript"></script>
-  <script src="../assets/js/select2.min.js" type="0384ef50617693332c161f48-text/javascript"></script>
+  <script src="../assets/js/jquery-3.7.1.min.js" type="17ce5bb74fc170f8dd79e879-text/javascript"></script>
+  <script src="../assets/js/bootstrap.bundle.min.js" type="17ce5bb74fc170f8dd79e879-text/javascript"></script>
+  <script src="../assets/js/feather.min.js" type="17ce5bb74fc170f8dd79e879-text/javascript"></script>
+  <script src="../assets/js/jquery.slimscroll.js" type="17ce5bb74fc170f8dd79e879-text/javascript"></script>
+  <script src="../assets/js/select2.min.js" type="17ce5bb74fc170f8dd79e879-text/javascript"></script>
 
-  <script src="../assets/plugins/moment/moment.min.js" type="0384ef50617693332c161f48-text/javascript"></script>
-  <script src="../assets/js/bootstrap-datetimepicker.min.js" type="0384ef50617693332c161f48-text/javascript"></script>
-  <script src="../assets/js/app.js" type="0384ef50617693332c161f48-text/javascript"></script>
+  <script src="../assets/plugins/moment/moment.min.js" type="17ce5bb74fc170f8dd79e879-text/javascript"></script>
+  <script src="../assets/js/bootstrap-datetimepicker.min.js" type="17ce5bb74fc170f8dd79e879-text/javascript"></script>
+  <script src="../assets/js/app.js" type="17ce5bb74fc170f8dd79e879-text/javascript"></script>
   <script src="../cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js"
-    data-cf-settings="0384ef50617693332c161f48-|49" defer></script>
+    data-cf-settings="17ce5bb74fc170f8dd79e879-|49" defer></script>
 </body>
 
-<!-- Mirrored from preclinic.dreamstechnologies.com/html/template/add-appointment.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 04 Jun 2024 21:43:17 GMT -->
+<!-- Mirrored from preclinic.dreamstechnologies.com/html/template/edit-schedule.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 04 Jun 2024 21:43:17 GMT -->
 
 </html>
